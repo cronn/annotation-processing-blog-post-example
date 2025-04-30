@@ -1,0 +1,6 @@
+
+dependencies {
+	implementation project(":custom-builder-processor")
+
+	annotationProcessor(project(":custom-builder-processor"))
+}

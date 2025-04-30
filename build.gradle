@@ -1,0 +1,25 @@
+
+group = "de.cronn"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+    apply plugin: "java"
+
+    repositories {
+        mavenCentral()
+    }
+
+	dependencies {
+		testImplementation("org.assertj:assertj-core:3.24.2")
+		testImplementation(platform("org.junit:junit-bom:5.9.1"))
+		testImplementation("org.junit.jupiter:junit-jupiter")
+	}
+
+	tasks.named('test') {
+		useJUnitPlatform()
+	}
+}

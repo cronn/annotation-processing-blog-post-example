@@ -1,0 +1,8 @@
+rootProject.name = "annotation-processing-blog-post-example"
+
+include("model")
+include("mapstruct-example")
+include("hibernate-example")
+include("lombok-example")
+include("custom-builder-processor")
+include("custom-builder-example")
